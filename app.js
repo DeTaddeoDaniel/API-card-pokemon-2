@@ -9,15 +9,26 @@ async function getDataPokemon(){
     try{
 
         let res = await fetch('https://pokeapi.co/api/v2/pokemon/' + getRndInteger(1,50));
-        // let res2 = await fetch('https://pokeapi.co/api/v2/?limit=60');
         let data = await res.json();
         
         console.log(data);
 
+        var pokemon = {
+            name:data.name,
+            image:data.sprites.front_default,
+            
+            hp: data.stats[0].base_stat,
+            attack: data.stats[1].base_stat,
+            speed: data.stats[5].base_stat,
+            defense: data.stats[3].base_stat,
+        };
+
+        console.log(pokemon);
+
         return data;   
 
     } catch(e){
-        console.log('errore: ' + e)
+        console.log('errore: ' + e);
     }
 }
 
