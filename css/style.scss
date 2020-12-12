@@ -25,9 +25,9 @@ html {
     text-align: center;
     background-color: white;
     border-radius: 15px;
-    width: 375px;
+    max-width: 375px;
     overflow: hidden;
-
+    font-size: 12px;
     &-header{
         width: 100%; 
         
@@ -38,25 +38,47 @@ html {
     }
 
     &-main{
+
+        border-bottom: 1px solid var(--Dark-gray);
         
         &-photo{
+
             margin-top:-100px;
-        }
 
-        &-photo span{
+            & span{
 
-            display: inline-block;
-            border-radius: 50%;
-            overflow: hidden;
+                display: inline-block;
+                border-radius: 50%;
+                overflow: hidden;
             
-            & img{
-                width: 200px;
-                height: 200px;   
-                padding: 30px;            
-                background-color: white; 
-                
+                & img{
+                    width: 200px;
+                    height: 200px;   
+                    padding: 30px;            
+                    background-color: white; 
+                }   
+            
             }
         }
+
+        &-info{
+
+            &-name{
+                font-size: 18px;
+                font-weight: 700;
+                color: var(--Very-dark-desaturated-blue);
+            }
+
+            &-hp{
+                color: var(--Dark-gray);
+                font-size: 8px;
+            }
+        }
+
+        &-esperienza{
+            font-size: 15px;
+        }
+        
         
     }
 }

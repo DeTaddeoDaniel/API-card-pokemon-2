@@ -33,8 +33,9 @@ html {
   text-align: center;
   background-color: white;
   border-radius: 15px;
-  width: 375px;
+  max-width: 375px;
   overflow: hidden;
+  font-size: 12px;
 }
 
 .card-header {
@@ -43,6 +44,10 @@ html {
 
 .card-header img {
   width: 100%;
+}
+
+.card-main {
+  border-bottom: 1px solid var(--Dark-gray);
 }
 
 .card-main-photo {
@@ -60,5 +65,20 @@ html {
   height: 200px;
   padding: 30px;
   background-color: white;
+}
+
+.card-main-info-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.card-main-info-hp {
+  color: var(--Dark-gray);
+  font-size: 8px;
+}
+
+.card-main-esperienza {
+  font-size: 15px;
 }
 /*# sourceMappingURL=style.css.map */
