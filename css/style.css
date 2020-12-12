@@ -58,6 +58,9 @@ html {
   display: inline-block;
   border-radius: 50%;
   overflow: hidden;
+  -webkit-box-shadow: -5px -5px 10px -4px #1772C2;
+  -o-box-shadow: -0px -0px 10px -4px #1772C2;
+  box-shadow: -0px -0px 10px -4px #1772C2;
 }
 
 .card-main-photo span img {
@@ -68,7 +71,7 @@ html {
 }
 
 .card-main-info-name {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 700;
   color: var(--Very-dark-desaturated-blue);
 }
@@ -80,5 +83,27 @@ html {
 
 .card-main-esperienza {
   font-size: 15px;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-footer-value-number {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card-footer-value-type {
+  font-size: 15px;
+}
+
+.card-footer-value.border {
+  border-left: 1px solid var(--Dark-gray);
+  border-right: 1px solid var(--Dark-gray);
 }
 /*# sourceMappingURL=style.css.map */
