@@ -5,6 +5,14 @@
     --Dark-gray: hsl(0, 0%, 59%);
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body{
     background-color: peru;
 }
