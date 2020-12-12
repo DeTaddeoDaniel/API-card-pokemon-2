@@ -15,7 +15,50 @@ html {
           box-sizing: inherit;
 }
 
-body {
-  background-color: peru;
+.container {
+  background-color: var(--Dark-cyan);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  width: 375px;
+  overflow: hidden;
+}
+
+.card-header {
+  width: 100%;
+}
+
+.card-header img {
+  width: 100%;
+}
+
+.card-main-photo {
+  margin-top: -100px;
+}
+
+.card-main-photo span {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card-main-photo span img {
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

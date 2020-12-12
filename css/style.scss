@@ -13,7 +13,52 @@ html {
   box-sizing: inherit;
 }
 
-body{
-    background-color: peru;
+.container{
+    background-color: var(--Dark-cyan);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.card{
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    width: 375px;
+    overflow: hidden;
+
+    &-header{
+        width: 100%; 
+        
+        & img{
+            width: 100%;
+        }
+
+    }
+
+    &-main{
+        
+        &-photo{
+            margin-top:-100px;
+        }
+
+        &-photo span{
+
+            display: inline-block;
+            border-radius: 50%;
+            overflow: hidden;
+            
+            & img{
+                width: 200px;
+                height: 200px;   
+                padding: 30px;            
+                background-color: white; 
+                
+            }
+        }
+        
+    }
+}
+
 
