@@ -76,11 +76,6 @@ html {
   color: var(--Very-dark-desaturated-blue);
 }
 
-.card-main-info-hp {
-  color: var(--Dark-gray);
-  font-size: 8px;
-}
-
 .card-main-esperienza {
   font-size: 15px;
 }
