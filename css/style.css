@@ -78,6 +78,7 @@ html {
 
 .card-main-esperienza {
   font-size: 15px;
+  color: var(--Dark-grayish-blue);
 }
 
 .card-footer {
@@ -88,13 +89,21 @@ html {
       justify-content: space-around;
 }
 
+.card-footer-value {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 17px;
+}
+
 .card-footer-value-number {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .card-footer-value-type {
   font-size: 15px;
+  margin-top: 0;
+  color: var(--Dark-grayish-blue);
 }
 
 .card-footer-value.border {

@@ -74,6 +74,7 @@ html {
 
         &-esperienza{
             font-size: 15px;
+            color: var(--Dark-grayish-blue);
         }
         
         
@@ -85,14 +86,19 @@ html {
         justify-content: space-around;
 
         &-value{
-
+            width: 100%;
+            margin: 0;
+            padding-bottom: 17px;
+            
             &-number{
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 25px;
             }
 
             &-type{
                 font-size: 15px;
+                margin-top: 0;
+                color: var(--Dark-grayish-blue);
             }
 
             &.border{

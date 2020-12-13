@@ -73,14 +73,13 @@ function creaCarta(pokemon){
     // fragment.appendChild(clone);
 
     // flex.appendChild(fragment);
-
-    $(".intro, .demo, .end")
+    
+    var v = $('.card-main-photo img').attr('src',pokemon.image);
     var v = $('card-footer-value-number, .attack').text(pokemon.attack);
     var v = $('card-footer-value-number, .defeat').text(pokemon.defense);
     var v = $('card-footer-value-number, .speed').text(pokemon.speed);
     var v = $('.card-main-info-name').text(pokemon.name);
     var v = $('.card-main-esperienza').text(pokemon.hp + ' hp');
-    var v = $('.card-main-photo img').attr('src',pokemon.image);
 
     console.log(v);
 }
