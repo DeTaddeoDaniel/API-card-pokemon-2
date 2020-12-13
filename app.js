@@ -30,7 +30,7 @@ function creaPokemon(data){
 
     var pokemon = {
         name:data.name,
-        image:data.sprites.front_default,
+        image:data.sprites.other.dream_world.front_default,
             
         hp: data.stats[0].base_stat,
         attack: data.stats[1].base_stat,
@@ -81,7 +81,6 @@ function creaCarta(pokemon){
     var v = $('.card-main-info-name').text(pokemon.name);
     var v = $('.card-main-esperienza').text(pokemon.hp + ' hp');
     var v = $('.card-main-photo img').attr('src',pokemon.image);
-
 
     console.log(v);
 }
